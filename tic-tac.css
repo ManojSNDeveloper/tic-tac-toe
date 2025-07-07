@@ -1,0 +1,174 @@
+/*
+    -------------- my CSS -----------------
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: rgb(147, 104, 104);
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem (0,0,0,0.3);
+    font-size: 8vmin;
+    color: red;
+    background-color: rgb(144, 200, 182);
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+
+#msg {
+    color: aqua;
+    font-size: 10vmin;
+}
+
+.msg-container {
+    height:  40vmin;
+}
+
+.hide{
+    display: none;
+}
+
+
+*/
+
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Title */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #2d3436;
+}
+
+/* Game container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Game grid */
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 60vmin;
+  height: 60vmin;
+}
+
+/* Game boxes (cells) */
+.box {
+  background-color: #dfe6e9;
+  border: 2px solid #636e72;
+  border-radius: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2d3436;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.box:hover {
+  background-color: #b2bec3;
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+#reset-btn,
+#new-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  background-color: #0984e3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+  background-color: #74b9ff;
+  transform: scale(1.05);
+}
+
+/* Message Display */
+.msg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#msg {
+  color: #00b894;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hide {
+  display: none;
+}
